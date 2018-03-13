@@ -1,0 +1,51 @@
+{
+  "name": "book-as-pro",
+  "version": "0.1.0",
+  "description": "Agent service",
+  "main": "lib/index.js",
+  "scripts": {
+    "lint:fix": "eslint-godaddy -c .eslintrc --fix lib/**/*.js test/**/*.js",
+    "lint": "npm run lint:fix",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "local": "NODE_ENV=local ./bin/server",
+    "start": "./bin/server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ywangii/book-as-pro.git"
+  },
+  "keywords": [
+    "search",
+    "booking"
+  ],
+  "author": "",
+  "license": "UNLICENSED",
+  "contributors": [
+    "Yiding Wang <ywaaang@gmail.com>"
+  ],
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "slay": "^1.1.0",
+    "slay-config": "^2.2.0",
+    "slay-log": "^2.3.0",
+    "supertest": "^3.0.0"
+  },
+  "devDependencies": {
+    "assume": "^1.5.2",
+    "assume-sinon": "^1.0.0",
+    "eslint": "^4.18.2",
+    "eslint-config-godaddy": "^2.1.0",
+    "eslint-config-godaddy-es5": "^2.1.0",
+    "eslint-config-godaddy-react": "^2.2.0",
+    "eslint-plugin-json": "^1.2.0",
+    "eslint-plugin-mocha": "^4.11.0",
+    "eslint-plugin-react": "^7.5.1",
+    "mocha": "^5.0.0",
+    "nyc": "^11.4.1",
+    "sinon": "^4.4.0"
+  },
+  "bugs": {
+    "url": "https://github.com/ywangii/book-as-pro/issues"
+  },
+  "homepage": "https://github.com/ywangii/book-as-pro#readme"
+}
