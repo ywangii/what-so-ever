@@ -1,0 +1,11 @@
+#!/usr/bin/env node
+
+require('../lib').start(function (err, app) {
+	if (err) {
+		throw err;
+	}
+
+	const port = app.servers.http.address().port;
+	app.log.info('Book-as-pro has started on port %j', port);
+});
+
