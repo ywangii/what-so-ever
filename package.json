@@ -4,6 +4,8 @@
   "description": "Agent service",
   "main": "lib/index.js",
   "scripts": {
+    "lint:fix": "eslint -c .eslintrc --fix lib/**/*.js test/",
+    "lint": "npm run lint:fix",
     "test": "echo \"Error: no test specified\" && exit 1",
     "local": "NODE_ENV=local ./bin/server",
     "start": "./bin/server"
