@@ -4,7 +4,7 @@
   "description": "Agent service",
   "main": "lib/index.js",
   "scripts": {
-    "lint:fix": "eslint -c .eslintrc --fix lib/**/*.js test/",
+    "lint:fix": "eslint-godaddy -c .eslintrc --fix lib/**/*.js test/**/*.js",
     "lint": "npm run lint:fix",
     "test": "echo \"Error: no test specified\" && exit 1",
     "local": "NODE_ENV=local ./bin/server",
@@ -33,9 +33,10 @@
   "devDependencies": {
     "assume": "^1.5.2",
     "assume-sinon": "^1.0.0",
-    "eslint": "^4.15.0",
+    "eslint": "^4.18.2",
     "eslint-config-godaddy": "^2.1.0",
     "eslint-config-godaddy-es5": "^2.1.0",
+    "eslint-config-godaddy-react": "^2.2.0",
     "eslint-plugin-json": "^1.2.0",
     "eslint-plugin-mocha": "^4.11.0",
     "eslint-plugin-react": "^7.5.1",
